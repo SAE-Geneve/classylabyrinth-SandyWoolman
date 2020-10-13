@@ -1,5 +1,5 @@
 #pragma once
-
+#include "World.h"
 #include "tile.h"
 
 void north();

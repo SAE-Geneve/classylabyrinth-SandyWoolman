@@ -1,8 +1,11 @@
 #include <iostream>
-#include "tile.h"
 #include "command.h"
+#include "Enemy.h"
+#include "Player.h"
+#include "tile.h"
+#include "World.h"
 
-void show_help() 
+/*void show_help() 
 {
 	std::cout << "Valid options:\n";
 	std::cout << "\t[q]uit   -> quit the game.\n";
@@ -117,4 +120,4 @@ int main()
 		tick();
 	}
 	return 0;
-}
+}*/

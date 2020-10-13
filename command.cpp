@@ -1,5 +1,8 @@
 #include <vector>
 #include "command.h"
+#include "Enemy.h"
+#include "Player.h"
+#include "World.h"
 
 namespace {
 
@@ -12,6 +15,12 @@ namespace {
 		set_enemy(enemy, enemy.x, enemy.y);
 	}
 
+}
+
+TileType get_tile_at_position(int x, int y)
+{
+	// Get the tile at the location x, y in the world.
+	return (TileType)local_world[xy_local(x, y)];
 }
 
 void north()
